@@ -1,0 +1,27 @@
+
+  table,tr,td,th{
+    border: 0.3rem solid #000;
+    border-collapse: collapse;
+    align-items: center;
+    width: 30rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  th{
+    background-color:rgba(255, 255, 255, 0.789);
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+
+  }
+  td{
+    padding: 0.2rem;
+    font-size: 2.8rem ;
+    color: rgb(255, 0, 0);
+    margin-bottom: 1rem;
+  }
+  
+  td:hover {
+    transform: scale(1.025);
+  }

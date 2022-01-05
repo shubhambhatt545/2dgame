@@ -1,0 +1,103 @@
+:root {
+  background-color: #ecf5ff;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.hide {
+  display: none;
+}
+.game{
+  background-color: green;
+}
+.gameArea {
+  position: relative;
+  background-color: black;
+  width: 50rem;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  min-width: 50rem;
+}
+
+.score , .hiScore {
+display: flex;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  font-weight: 600;
+  height: 4rem;
+  color: black;
+  font-size: 2.6rem;
+  border: 0.4rem solid black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.score{
+  left:0;
+  z-index: 2;
+}
+
+.hiScore{
+  right: 0;
+  z-index: 1;
+}
+
+.enemy {
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 10rem;
+  margin: auto;
+  width: 5rem;
+  height: 10rem;
+}
+
+.car {
+  position: absolute;
+  background: url("me.png");
+  background-repeat: no-repeat;
+  margin: auto;
+  bottom: 10rem;
+  left: 22.5rem;
+  width: 5rem;
+  height: 10rem;
+}
+
+.line {
+  position: absolute;
+  background-color: white;
+  height: 10rem;
+  bottom: 10rem;
+  width: 1rem;
+  margin-left: 24.5rem;
+}
+
+
+
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #2294f7;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
